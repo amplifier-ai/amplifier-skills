@@ -13,6 +13,13 @@
       "version": "1.0.0",
       "source": "./plugins/evolution",
       "category": "productivity"
+    },
+    {
+      "name": "jira-workflows",
+      "description": "Jira issue workflows with medical research context and PubMed citations",
+      "version": "1.0.0",
+      "source": "./plugins/jira-workflows",
+      "category": "productivity"
     }
   ]
 }

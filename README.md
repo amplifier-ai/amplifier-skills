@@ -12,6 +12,15 @@ Error analysis and self-improvement skills for Claude Code agents.
 |-------|-------------|
 | `evo` | Analyze mistakes, extract lessons, and update AGENTS.md to prevent recurrence |
 
+### jira-workflows
+
+Jira issue workflows with medical research context and PubMed citations.
+
+| Skill | Description |
+|-------|-------------|
+| `create-issue` | Create well-structured Jira issues with clinical context and references |
+| `refine-issue` | Enhance existing Jira issues with research, structure, and acceptance criteria |
+
 ## Quick Start
 
 ```bash
@@ -24,15 +33,18 @@ claude
 # 3. Inside the session, add the marketplace (one time)
 /plugin marketplace add amplifier-ai/amplifier-skills
 
-# 4. Install the evolution plugin
+# 4. Install plugins
 /plugin install evolution@amplifier-ai-amplifier-skills
+/plugin install jira-workflows@amplifier-ai-amplifier-skills
 
 # 5. Restart the session
 /exit
 
-# 6. Start a new session and use the skill
+# 6. Start a new session and use the skills
 claude
 /evolution:evo
+/jira-workflows:create-issue
+/jira-workflows:refine-issue
 ```
 
 ## Managing plugins
