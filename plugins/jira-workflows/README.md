@@ -31,6 +31,20 @@ Enhance existing Jira issues with research, proper structure, and acceptance cri
 
 **Invoke:** `/jira-workflows:refine-issue`
 
+### organize-issues
+
+Analyze existing issues, identify common themes, and group them into epics.
+
+**Workflow:**
+1. Fetch issues by project/board with JQL filters
+2. Cluster by theme, problem area, or feature
+3. Present proposed epics with issue grouping for approval
+4. Create epics and link issues
+
+**Safety:** always shows the plan before creating anything.
+
+**Invoke:** `/jira-workflows:organize-issues`
+
 ## Install
 
 ```bash
