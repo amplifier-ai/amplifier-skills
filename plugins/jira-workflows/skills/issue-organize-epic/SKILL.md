@@ -9,7 +9,13 @@ Analyze existing Jira issues, identify common themes, and group them into epics.
 
 ## Workflow
 
-### Phase 1: Collect Issues
+### Phase 1: Understand the Problem
+
+Ask the user:
+- **What problem or theme to group by?** — e.g. "iliac artery measurements", "workspace performance", "UI bugs"
+- This is the lens for clustering. Without it, grouping is arbitrary.
+
+### Phase 2: Collect Issues
 
 1. Ask the user for the scope:
    - **Project or board**: which Jira project to scan?
@@ -18,14 +24,15 @@ Analyze existing Jira issues, identify common themes, and group them into epics.
 2. Fetch issues using `jira_search` with JQL
 3. For large result sets, paginate and collect all matching issues
 
-### Phase 2: Analyze & Cluster
+### Phase 3: Analyze & Cluster
 
 1. Read each issue's summary, description, and labels
-2. Identify recurring themes, problem areas, or feature groups
-3. Cluster issues into proposed groups — each group becomes a potential epic
-4. Flag orphan issues that don't fit any cluster
+2. Filter and group issues **through the lens of the stated problem**
+3. Cluster into proposed groups — each group becomes a potential epic
+4. Flag issues that are related but don't fit neatly into any cluster
+5. Flag issues that are clearly unrelated to the problem
 
-### Phase 3: Present Plan
+### Phase 4: Present Plan
 
 Show the user a table of proposed epics:
 
@@ -49,7 +56,7 @@ Ask for approval:
 - Skip any group?
 - What to do with orphans?
 
-### Phase 4: Create Epics & Link
+### Phase 5: Create Epics & Link
 
 After approval:
 
@@ -64,7 +71,7 @@ After approval:
      ```
 4. **Report results** — show which issues were linked, flag any failures
 
-### Phase 5: Summary
+### Phase 6: Summary
 
 Present final report:
 
