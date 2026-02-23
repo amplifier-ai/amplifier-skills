@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "amplifier-ai-amplifier-skills",
+  "description": "Shared Claude Code plugins for Amplifier.AI medical imaging projects",
+  "owner": {
+    "name": "Amplifier.AI",
+    "email": "denis@amplifier.ai"
+  },
+  "plugins": [
+    {
+      "name": "evolution",
+      "description": "Error analysis and self-improvement skills for Claude Code agents",
+      "version": "1.0.0",
+      "source": "./plugins/evolution",
+      "category": "productivity"
+    }
+  ]
+}
