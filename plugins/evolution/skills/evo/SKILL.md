@@ -1,11 +1,11 @@
 ---
 name: evo
-description: Use when the user identifies a mistake, says "/evo", or wants to analyze an error and evolve AGENTS.md to prevent future recurrence
+description: Use when the user identifies a mistake, says "/evo", or wants to analyze an error and evolve project guidelines to prevent future recurrence
 ---
 
 # EVO: Error Analysis & Self-Improvement
 
-Analyze mistakes, extract lessons, and update AGENTS.md to prevent recurrence.
+Analyze mistakes, extract lessons, and update project guidelines to prevent recurrence.
 
 ## Workflow
 
@@ -35,49 +35,42 @@ Write a concise, actionable rule. It must be:
 - **Testable** — can verify compliance
 - **Minimal** — no unnecessary process
 
-### 4. Review AGENTS.md
+### 4. Find the Guidelines File
 
-Read current AGENTS.md. Find the appropriate section:
+Locate the project guidelines file to update:
 
-| Section | Content |
-|---------|---------|
-| 1 | Core principles |
-| 2 | Professional mindset |
-| 3 | Git safety |
-| 4 | Environment/dependencies |
-| 5 | Pre-commit/static analysis |
-| 6 | Editing workflow |
-| 7 | Testing/validation |
-| 8 | Imaging/data handling |
+1. Check if `AGENTS.md` exists in the repo root — if yes, use it
+2. Otherwise, use `CLAUDE.md`
 
+Read the file and find the appropriate section for the new rule.
 Check if a similar rule already exists that should be updated instead.
 
 ### 5. Propose the Update
 
-Show the user the proposed addition/modification to AGENTS.md. Explain why this rule would have prevented the error. **Get explicit approval before making changes.**
+Show the user the proposed addition/modification. Explain why this rule would have prevented the error. **Get explicit approval before making changes.**
 
 ### 6. Apply the Update
 
 After approval:
-1. Edit AGENTS.md with the approved change
-2. Run `pre-commit run --files AGENTS.md` to validate formatting
+1. Edit the guidelines file with the approved change
+2. Run `pre-commit run --files <file>` to validate formatting (if pre-commit is configured)
 3. Summarize the change
 
 ### 7. Log the Evolution
 
-Append to `EVOLUTION_LOG.md` using **Context / Action / Goal** format:
+If `EVOLUTION_LOG.md` exists, append an entry using **Context / Action / Goal** format:
 
 ```markdown
 ## YYYY-MM-DD: Brief title
 
 **Context:** What went wrong and why.
 
-**Action:** What rule was added/modified in AGENTS.md.
+**Action:** What rule was added/modified.
 
 **Goal:** What this change prevents in the future.
 ```
 
-Run `pre-commit run --files EVOLUTION_LOG.md` to validate.
+Run `pre-commit run --files EVOLUTION_LOG.md` to validate (if pre-commit is configured).
 
 ### 8. Confirm Understanding
 

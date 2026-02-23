@@ -6,14 +6,14 @@ Error analysis and self-improvement skills for Claude Code agents.
 
 ### evo
 
-Analyze mistakes, extract root causes, and evolve AGENTS.md to prevent recurrence.
+Analyze mistakes, extract root causes, and evolve project guidelines to prevent recurrence.
 
 **Workflow:**
 1. Identify and classify the error (code, process, communication, safety, style)
 2. Root cause analysis — what assumption was wrong? what step was skipped?
 3. Formulate an actionable, testable rule
-4. Propose an update to AGENTS.md (with user approval)
-5. Log the evolution to EVOLUTION_LOG.md
+4. Update `AGENTS.md` (if exists) or `CLAUDE.md` (with user approval)
+5. Log the evolution to `EVOLUTION_LOG.md` (if exists)
 
 **Invoke:** `/evolution:evo`
 
