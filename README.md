@@ -4,22 +4,10 @@ Shared Claude Code plugin marketplace for Amplifier.AI.
 
 ## Plugins
 
-### evolution
-
-Error analysis and self-improvement skills for Claude Code agents.
-
-| Skill | Description |
-|-------|-------------|
-| `evo` | Analyze mistakes, extract lessons, and update AGENTS.md to prevent recurrence |
-
-### jira-workflows
-
-Jira issue workflows with medical research context and PubMed citations.
-
-| Skill | Description |
-|-------|-------------|
-| `create-issue` | Create well-structured Jira issues with clinical context and references |
-| `refine-issue` | Enhance existing Jira issues with research, structure, and acceptance criteria |
+| Plugin | Skills | Description |
+|--------|--------|-------------|
+| [evolution](./plugins/evolution/) | `evo` | Error analysis and self-improvement — evolve AGENTS.md from mistakes |
+| [jira-workflows](./plugins/jira-workflows/) | `create-issue`, `refine-issue` | Jira issues with PubMed research and clinical context |
 
 ## Quick Start
 
