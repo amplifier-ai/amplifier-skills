@@ -40,7 +40,7 @@ claude
 
 ```bash
 # Update to latest version
-/plugin marketplace refresh amplifier-ai-amplifier-skills
+/plugin marketplace update amplifier-ai-amplifier-skills
 
 # Uninstall
 /plugin uninstall evolution@amplifier-ai-amplifier-skills
