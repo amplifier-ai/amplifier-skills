@@ -12,52 +12,46 @@ Error analysis and self-improvement skills for Claude Code agents.
 |-------|-------------|
 | `evo` | Analyze mistakes, extract lessons, and update AGENTS.md to prevent recurrence |
 
-## Installation
+## Quick Start
 
-### Prerequisites
+```bash
+# 1. Install Claude Code (if not installed)
+npm install -g @anthropic-ai/claude-code
 
-- [Claude Code](https://claude.com/claude-code) CLI installed
-- GitHub SSH access configured (`ssh -T git@github.com` should work)
+# 2. Start a Claude Code session
+claude
 
-### Step 1: Add the marketplace
-
-Run inside any Claude Code session:
-
-```
+# 3. Inside the session, add the marketplace (one time)
 /plugin marketplace add amplifier-ai/amplifier-skills
-```
 
-This registers the marketplace globally. You only need to do this once.
-
-### Step 2: Install a plugin
-
-```
+# 4. Install the evolution plugin
 /plugin install evolution@amplifier-ai-amplifier-skills
-```
 
-### Step 3: Verify
+# 5. Restart the session
+/exit
 
-Start a new Claude Code session. The skill should appear in the available skills list.
-Invoke it with:
-
-```
+# 6. Start a new session and use the skill
+claude
 /evolution:evo
 ```
 
-### Updating
+## Managing plugins
 
-To get the latest version of plugins:
-
-```
+```bash
+# Update to latest version
 /plugin marketplace refresh amplifier-ai-amplifier-skills
-```
 
-### Uninstalling
-
-```
+# Uninstall
 /plugin uninstall evolution@amplifier-ai-amplifier-skills
+
+# Remove marketplace entirely
 /plugin marketplace remove amplifier-ai-amplifier-skills
 ```
+
+## Prerequisites
+
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI installed
+- GitHub SSH access configured (verify: `ssh -T git@github.com`)
 
 ## Contributing
 
