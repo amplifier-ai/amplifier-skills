@@ -4,10 +4,10 @@ Shared Claude Code plugin marketplace for Amplifier.AI.
 
 ## Plugins
 
-| Plugin | Skills | Description |
-|--------|--------|-------------|
-| [evolution](./plugins/evolution/) | `evo` | Error analysis and self-improvement — evolve AGENTS.md from mistakes |
-| [jira-workflows](./plugins/jira-workflows/) | `create-issue`, `refine-issue` | Jira issues with PubMed research and clinical context |
+| Plugin | Version | Skills | Description |
+|--------|---------|--------|-------------|
+| [evolution](./plugins/evolution/) | 1.1.0 | `evo` | Error analysis and self-improvement — evolve project guidelines from mistakes |
+| [jira-workflows](./plugins/jira-workflows/) | 1.0.0 | `create-issue`, `refine-issue` | Jira issues with PubMed research and clinical context |
 
 ## Quick Start
 
