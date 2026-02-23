@@ -10,14 +10,14 @@
     {
       "name": "evolution",
       "description": "Error analysis and self-improvement skills for Claude Code agents",
-      "version": "1.0.0",
+      "version": "2026.02.23.1607",
       "source": "./plugins/evolution",
       "category": "productivity"
     },
     {
       "name": "jira-workflows",
       "description": "Jira issue workflows with medical research context and PubMed citations",
-      "version": "1.1.0",
+      "version": "2026.02.23.1607",
       "source": "./plugins/jira-workflows",
       "category": "productivity"
     }

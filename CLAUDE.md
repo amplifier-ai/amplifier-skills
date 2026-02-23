@@ -2,10 +2,9 @@
 
 ## Versioning
 
-Bump the plugin version in `.claude-plugin/plugin.json` when changing skills:
-- **patch** (1.0.0 → 1.0.1): typos, wording fixes
-- **minor** (1.0.0 → 1.1.0): new skills, workflow changes
-- **major** (1.0.0 → 2.0.0): breaking changes to skill names or behavior
+Version format: `YYYY.MM.DD.HHmm` (`date +"%Y.%m.%d.%H%M"`).
+
+Bump the version in `.claude-plugin/plugin.json` **and** `.claude-plugin/marketplace.json` when changing skills.
 
 ## Structure
 

@@ -4,7 +4,7 @@ Jira issue workflows with medical research context and PubMed citations.
 
 ## Skills
 
-### create-issue
+### issue-create
 
 Create well-structured Jira issues with clinical context, team assignments, and PubMed references.
 
@@ -15,9 +15,9 @@ Create well-structured Jira issues with clinical context, team assignments, and 
 4. Determine structure — single issue or epic with linked issues
 5. Create with proper sections: overview, requirements, acceptance criteria, references
 
-**Invoke:** `/jira-workflows:create-issue`
+**Invoke:** `/jira-workflows:issue-create`
 
-### refine-issue
+### issue-refine
 
 Enhance existing Jira issues with research, proper structure, and acceptance criteria.
 
@@ -29,9 +29,9 @@ Enhance existing Jira issues with research, proper structure, and acceptance cri
 
 **Safety:** never changes assignee/status, never removes existing content.
 
-**Invoke:** `/jira-workflows:refine-issue`
+**Invoke:** `/jira-workflows:issue-refine`
 
-### organize-issues
+### issue-organize-epic
 
 Analyze existing issues, identify common themes, and group them into epics.
 
@@ -43,7 +43,7 @@ Analyze existing issues, identify common themes, and group them into epics.
 
 **Safety:** always shows the plan before creating anything.
 
-**Invoke:** `/jira-workflows:organize-issues`
+**Invoke:** `/jira-workflows:issue-organize-epic`
 
 ## Install
 

@@ -1,5 +1,5 @@
 ---
-name: create-issue
+name: issue-create
 description: Use when user asks to create a Jira issue, says "create task", or needs a well-structured issue with clinical context and PubMed references
 ---
 

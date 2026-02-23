@@ -6,8 +6,8 @@ Shared Claude Code plugin marketplace for Amplifier.AI.
 
 | Plugin | Version | Skills | Description |
 |--------|---------|--------|-------------|
-| [evolution](./plugins/evolution/) | 1.1.0 | `evo` | Error analysis and self-improvement — evolve project guidelines from mistakes |
-| [jira-workflows](./plugins/jira-workflows/) | 1.1.0 | `create-issue`, `refine-issue`, `organize-issues` | Jira issues with PubMed research and clinical context |
+| [evolution](./plugins/evolution/) | 2026.02.23.1607 | `evo` | Error analysis and self-improvement — evolve project guidelines from mistakes |
+| [jira-workflows](./plugins/jira-workflows/) | 2026.02.23.1607 | `issue-create`, `issue-refine`, `issue-organize-epic` | Jira issues with PubMed research and clinical context |
 
 ## Quick Start
 
@@ -31,8 +31,9 @@ claude
 # 6. Start a new session and use the skills
 claude
 /evolution:evo
-/jira-workflows:create-issue
-/jira-workflows:refine-issue
+/jira-workflows:issue-create
+/jira-workflows:issue-refine
+/jira-workflows:issue-organize-epic
 ```
 
 ## Managing plugins

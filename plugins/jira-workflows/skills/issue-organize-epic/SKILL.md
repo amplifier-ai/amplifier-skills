@@ -1,5 +1,5 @@
 ---
-name: organize-issues
+name: issue-organize-epic
 description: Use when user wants to triage, categorize, or group existing Jira issues into epics by problem area, theme, or feature
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: refine-issue
+name: issue-refine
 description: Use when user asks to improve, refine, or enhance an existing Jira issue with better structure, clinical context, or PubMed references
 ---
 
